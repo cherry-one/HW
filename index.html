@@ -1,62 +1,563 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <title>[HW1]프런트엔드 개발자 지원서</title>
-    <style>
-			#container { 
-				width:520px;
-				border:1px solid black;
-				padding:20px 40px;
-				margin:0 auto;
-			}
-      fieldset { margin-bottom:15px; }
-      legend { font-weight:bold; }
-			ul {list-style-type: none;}
-			li { line-height:30px;}
-    </style>
-  </head>
-  <body>
-		<div id="container">
-			<h1>프론트엔드 개발자 지원서 </h1>
-			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
-			<hr>
-			<form>
-				
-				<h4>개인 정보</h4>
-				<ul>
-					<li>
-						<label for="name">이름</label>
-						<input type="text" placeholder="공백 없이 입력하세요.">
-					</li>
-					<li>
-						<label for="number">연락처</label>
-						<input type="phone" maxlength="11">
-					</li>
-				</ul>
+<html lang="en">
 
-				<h4>지원 분야</h4>
-				<ul>
-					<li>
-						<label><input type="radio" name="web"> 웹 퍼블리싱</label>
-					</li>
-					<li>
-						<label><input type="radio" name="web"> 웹 애플리케이션 개발</label>
-					</li>
-					<li>
-						<label><input type="radio" name="web"> 개발 환경 개선</label>
-					</li>
-				</ul>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>[진주 10기]</title>
 
-				<h4>지원 동기</h4>
-				<label>
-					<textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
-				</label>
-				<div>
-					<button type="submit">접수 하기</button>
-					<button type="reset">다시 쓰기</button>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const toggleBtn1 = document.querySelector('.toggle-btn1');
+			const subButtons1 = document.querySelector('.sub_buttons1');
+			const toggleBtn2 = document.querySelector('.toggle-btn2');
+			const subButtons2 = document.querySelector('.sub_buttons2');
+			const toggleBtn3 = document.querySelector('.toggle-btn3');
+			const subButtons3 = document.querySelector('.sub_buttons3');
+			const toggleBtn4 = document.querySelector('.toggle-btn4');
+			const subButtons4 = document.querySelector('.sub_buttons4');
+			const toggleBtn5 = document.querySelector('.toggle-btn5');
+			const subButtons5 = document.querySelector('.sub_buttons5');
+			const toggleBtn6 = document.querySelector('.toggle-btn6');
+			const subButtons6 = document.querySelector('.sub_buttons6');
+
+			toggleBtn1.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons1.classList.contains('hidden')) {
+					subButtons1.classList.remove('hidden');
+					subButtons1.style.display = 'flex';
+					subButtons1.style.flexWrap = 'wrap';
+				} else {
+					subButtons1.classList.add('hidden');
+					subButtons1.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+		
+			toggleBtn2.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons2.classList.contains('hidden')) {
+					subButtons2.classList.remove('hidden');
+					subButtons2.style.display = 'flex';
+					subButtons2.style.flexWrap = 'wrap';
+				} else {
+					subButtons2.classList.add('hidden');
+					subButtons2.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+		
+			toggleBtn3.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons3.classList.contains('hidden')) {
+					subButtons3.classList.remove('hidden');
+					subButtons3.style.display = 'flex';
+					subButtons3.style.flexWrap = 'wrap';
+				} else {
+					subButtons3.classList.add('hidden');
+					subButtons3.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+
+			toggleBtn4.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons4.classList.contains('hidden')) {
+					subButtons4.classList.remove('hidden');
+					subButtons4.style.display = 'flex';
+					subButtons4.style.flexWrap = 'wrap';
+				} else {
+					subButtons4.classList.add('hidden');
+					subButtons4.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+		
+			toggleBtn5.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons5.classList.contains('hidden')) {
+					subButtons5.classList.remove('hidden');
+					subButtons5.style.display = 'flex';
+					subButtons5.style.flexWrap = 'wrap';
+				} else {
+					subButtons5.classList.add('hidden');
+					subButtons5.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+		
+			toggleBtn6.addEventListener('click', function (e) {
+				e.preventDefault(); // 링크 이동 방지
+
+
+				if (subButtons6.classList.contains('hidden')) {
+					subButtons6.classList.remove('hidden');
+					subButtons6.style.display = 'flex';
+					subButtons6.style.flexWrap = 'wrap';
+				} else {
+					subButtons6.classList.add('hidden');
+					subButtons6.removeAttribute('style'); // 스타일 초기화
+				}
+
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div style="margin: 10px;">
+		<h1>GSITM 부트캠프 진주 10기</h1>
+		<p style="margin-left: 10px;"> ✨채원이의 개발 과제 </p>
+		<hr>
+
+		<div style="display: flex; justify-content: center;">
+		<div class="tabs" style="margin: 30px 10px;">
+
+			<input id="Apr" type="radio" name="tab_item" checked>
+			<label class="tab_item" for="Apr">4월</label>
+			<input id="May" type="radio" name="tab_item">
+			<label class="tab_item" for="May">5월</label>
+
+			<div class="day_taps" id="Apr_content">
+
+				<input id="Apr_22" type="radio" name="day_tab_item">
+				<label class="day_tab_item" for="Apr_22">22일(TUE)</label>
+				<input id="Apr_23" type="radio" name="day_tab_item">
+				<label class="day_tab_item" for="Apr_23">23일(WED)</label>
+				<input id="Apr_24" type="radio" name="day_tab_item" checked>
+				<label class="day_tab_item" for="Apr_24">24일(THU)</label>
+				<input id="Apr_25" type="radio" name="day_tab_item">
+				<label class="day_tab_item" for="Apr_25">25일(FRI)</label>
+
+				<div class="tab_content" id="Apr22_content">
+					<div class="btn_content">
+						
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0422/report.html">report</a> <br>
+						</div>
+						
+					</div>
 				</div>
-			</form>
+
+				<div class="tab_content" id="Apr23_content">
+					<div class="btn_content">
+
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0423/01.apple.html">apple</a> <br>
+						</div>
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0423/02.bear.html">bear</a> <br>
+						</div>
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0423/03.travel.html">travel</a> <br>
+						</div>
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0423/04.trend.html">trend</a> <br>
+						</div>
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/0423/05.mic.html">mic</a> <br>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab_content" id="Apr24_content">
+					<div class="btn_content">
+
+						<!-- 01.MediaQueries -->
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn1" href="#">✏️MediaQueries</a><br>
+						</div>
+						<div class="sub_buttons1 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/01.MediaQueries/01.em.html">em 단위</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/01.MediaQueries/02.rem.html">rem 단위</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/01.MediaQueries/03.object-fit.html">object-fit 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/01.MediaQueries/04.mediaqueries.html">미디어쿼리</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/01.MediaQueries/05.quiz.html">QUIZ</a> <br>
+							</div>
+						</div>
+							
+						<!-- 02.FlexBoxLayout -->						
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn2" href="#">✏️FlexBoxLayout</a><br>
+						</div>
+						<div class="sub_buttons2 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/01.flex-direction.html">flex-direction 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/02.flex-wrap.html">flex-wrap 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/03.flex-flow.html">flex-flow 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/04.justify-content.html">justify-content 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/05.align-items.html">align-items 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/06.align-self.html">align-self 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/07.align-content.html">align-content 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/08.FlexBoxLayout.html">FlexBoxLayout</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/09.flex-basis.html">flex-basis 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/10.flex-grow.html">flex-grow 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/11.flex-shrink.html">flex-shrink 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/12.margin.html">margin 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/13.margin2.html">margin2 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/14.margin3.html">margin3 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/15.our-team.html">our-team</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/02.FlexBoxLayout/16.quiz.html">QUIZ</a> <br>
+							</div>
+						</div>
+
+						<!-- 03.GridLayout -->						
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn3" href="#">✏️GridLayout</a><br>
+						</div>
+						<div class="sub_buttons3 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/01.gridcontainer.html">grid container</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/02.grid-auto-rows.html">grid-auto-rows 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/03.grid-template-rows.html">grid-template-rows 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/04.auto-fit,fill.html">auto-fit,fill 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/05.gap.html">grid gap 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/06.grid-row,column.html">grid-row,column 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/07.grid-area.html">grid-area 속성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/08.responsive.html">responsive</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/09.quiz1.html">Quiz1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/03.GridLayout/10.quiz2.html">Quiz2</a> <br>
+							</div>
+						</div>
+
+						<!-- 04.Selector -->					
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn4" href="#">✏️Selector</a><br>
+						</div>
+						<div class="sub_buttons4 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/01.descendant.html">하위선택자</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/02.child.html">자식선택자</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/03.adjacent.html">인접형제선택자</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/04.sibling.html">형제선택자</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/05.register1.html">폼레이블작성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/06.attribute.html">속성선택자</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/07.attr=.html">[속성 = 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/08.attr~=.html">[속성 ~= 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/09.attrl=.html">[속성 |= 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/10.attr^=.html">[속성 ^= 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/11.attr$=.html">[속성 $= 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/12.attr.=.html">[속성 *= 값]</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/13.register2.html">폼요소스타일</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/14.pseudo.html">가상클래스</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/15.checked.html">요소상태</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/16.first-child.html">문서구조1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/17.nth-child.html">문서구조2</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/18.nth-of-type.html">문서구조3</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/19.not.html">논리조합1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/20.register3.html">가상클래스폼</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/21.has.html">논리조합2</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/22.first-line,letter.html">가상요소1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/23.before,after.html">가상요소2</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/24.badge.html">배지표시</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/25.calc().html">함수 calc()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/26.min(),max().html">함수 min(),max()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/27.clamp().html">함수 clamp()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/28.filter.html">filter 속성성</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/29.quiz1.html">Quiz1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/04.Selector/30.quiz2.html">Quiz2</a> <br>
+							</div>
+						</div>
+
+						<!-- 05.Transition -->					
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn5" href="#">✏️Transition</a><br>
+						</div>
+						<div class="sub_buttons5 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/01.translate().html">translate()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/02.scale().html">scale()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/03.rotate().html">rotate()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/04.perspective().html">perspective()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/05.rotate()-3d.html">rotate()-3d</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/06.skew().html">skew()</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/07.transition.html">transition</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/05.Transition/08.product.html">product</a> <br>
+							</div>
+						</div>
+
+						<!-- 06.Animation -->					
+						<div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn toggle-btn6" href="#">✏️Animation</a><br>
+						</div>
+						<div class="sub_buttons6 hidden">
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/01.animation.html">animation</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/02.animation-direction.html">animation-direction</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/03.animation-timing-function.html">animation-timing-function</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/04.button.html">button</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/05.quiz1.html">Quiz1</a> <br>
+							</div>
+							<div class="day_btn">
+								<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+								<a class="btn" href="/0424/06.Animation/06.quiz2.html">Quiz2</a> <br>
+							</div>
+					</div>
+				</div>
+
+				
+				<div class="tab_content" id="Apr25_content">
+					<div class="btn_content">
+
+						<!-- <div class="day_btn">
+							<i class="fa-solid fa-link" style="margin-right: 5px;"></i>
+							<a class="btn" href="/hw/4/0422.html">22일(화) 과제</a> <br>
+						</div> -->
+
+					</div>
+				</div>				
+			</div>
+
+
+			
+			<div class="tab_content" id="May_content">
+				<div style="margin: 10px;">
+					<div>
+						<div class="none_link"> 현재 연결된 페이지가 없습니다. </div>
+					</div>
+				</div>
+			</div>
 		</div>
-  </body>
+	</div>
+	</div>
+</body>
+
 </html>

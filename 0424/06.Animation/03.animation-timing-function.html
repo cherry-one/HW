@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>animation-timing-function 속성</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 60px auto;      
+      animation: rotate 1.5s infinite,  /* rotate 애니 정의, 1.5초 진행, 무한 반복 */ 
+                  background 1.5s infinite alternate;   /* background 애니 정의, 1.5초 진행, 무한 반복 */
+    }
+
+    /* Do it! 0도 -> x축 -180도 회전 -> y축 -180도 회전하는 애니메이션 정의하기 */
+    @keyframes rotate {  
+      0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+      50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
+      100% { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+    }
+
+    /* 배경색을 빨강 -> 초록 -> 파랑순으로 바꾸는 애니메이션 정의하기 */
+    @keyframes background {  
+      /* 시작 배경색 빨강 */
+      0% { background-color: red; }
+      /* 중간(50%) 배경색 초록 */
+      50% { background-color: green }
+      /* 마지막(100%) 배경색 파랑랑 */
+      100% { background-color: blue; }
+    }
+  </style>
+</head>
+
+<body>
+	<div class="box">	</div>
+</body>
+</html>
